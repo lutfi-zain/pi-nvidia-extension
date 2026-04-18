@@ -1,6 +1,6 @@
 {
   "name": "pi-nvidia-extension",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "NVIDIA NIM provider for pi-coding-agent",
   "main": "index.ts",
   "author": "Lutfi",
