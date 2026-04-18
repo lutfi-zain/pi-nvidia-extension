@@ -1,36 +1,86 @@
-# Pi NVIDIA Extension
+# ⚠️ DEPRECATED: Use pi-nvidia-nim Instead
 
-A Pi extension that adds NVIDIA NIM provider support to the pi-coding-agent.
+**This extension is no longer maintained.** 
 
-## Features
+**Please use the superior [pi-nvidia-nim](https://www.npmjs.com/package/pi-nvidia-nim) package instead.**
 
-- Adds NVIDIA as a model provider to pi-coding-agent
-- Enables access to NVIDIA NIM models
-- Seamless integration with pi's model selection system
+---
+
+# pi-nvidia-nim (Recommended Alternative)
+
+A more complete and feature-rich NVIDIA NIM provider for pi-coding-agent.
+
+## Why pi-nvidia-nim is Better
+
+- **39+ curated models** with auto-discovery of even more
+- **Full thinking/reasoning support** - properly enables thinking for DeepSeek, GLM, Kimi, Qwen models
+- **Thinking level mapping** - supports off/minimal/low/medium/high
+- **Vision models** support
+- **Tool calling** validated and working
+- **Auto-discovers** new models from NVIDIA API
+- **Bug fixes** - fixes 500 errors (uses system role instead of developer)
+- **Active development** - 17 releases and counting
 
 ## Installation
 
-### Via Git (Recommended)
-
 ```bash
-pi install git:github.com/lutfi-zain/pi-nvidia-extension
+pi install npm:pi-nvidia-nim
 ```
 
-### Via Local Path
+## Configuration
+
+Set your NVIDIA API key:
 
 ```bash
-pi install /path/to/pi-nvidia-extension
+export NVIDIA_API_KEY="your-nvidia-api-key"
 ```
 
-## Usage
-
-Once installed, the NVIDIA provider will be available in pi's model selection. You can:
-
-1. Use `/model` to select NVIDIA models
-2. Configure NVIDIA API key in pi's settings
-3. Use NVIDIA models directly in your coding sessions
+Get your API key at [https://build.nvidia.com](https://build.nvidia.com)
 
 ## Available Models
+
+pi-nvidia-nim comes with 39+ curated models including:
+
+- DeepSeek V3.2, V3.1, R1 distills
+- Kimi K2.5, K2-thinking
+- MiniMax M2.1, M2.5
+- GLM-5, GLM-4.7
+- Qwen3, QwQ models
+- Llama 4 Maverick, Llama 3.1 405B
+- Mistral Large 3, Devstral 2
+- Nemotron models
+- And many more...
+
+Plus automatic discovery of additional models from NVIDIA API!
+
+## Features
+
+### Thinking Support
+- Enables thinking/reasoning for DeepSeek, GLM, Kimi, Qwen models
+- Maps thinking levels: off → minimal → low → medium → high
+- Properly handles models that think by default
+
+### Tool Calling
+Tested and working with DeepSeek V3.2, GLM-5, GLM-4.7, Qwen3, Kimi K2.5, and more.
+
+### Automatic Model Discovery
+At startup, queries NVIDIA NIM API to discover additional models automatically.
+
+---
+
+# Original Extension (Deprecated)
+
+This was my initial attempt at creating an NVIDIA NIM extension. It has been superseded by [pi-nvidia-nim](https://www.npmjs.com/package/pi-nvidia-nim) which is much more complete and feature-rich.
+
+## Why I Recommend pi-nvidia-nim
+
+1. **Better model support** - 39+ models vs our 10
+2. **Thinking models** - Full support we couldn't figure out
+3. **Auto-discovery** - Finds new models automatically
+4. **Tool calling** - Tested and working
+5. **Active development** - 17 releases vs our 1
+
+## If You Still Want This Version
 
 This extension provides access to 10 high-performance NVIDIA NIM models, tested and verified to work correctly:
 
@@ -59,28 +109,13 @@ This extension provides access to 10 high-performance NVIDIA NIM models, tested 
 | Mistral Large 3 675B | 58.0% | 32k | ~3s |
 | Nemotron Ultra 253B | 56.0% | 128k | ~1s |
 
-**Note:** All models are free to use with your NVIDIA API key. SWE-bench scores indicate coding task performance.
-
-## Configuration
-
-### Method 1: Using `/login` (Recommended)
-
-After installing the extension, you can authenticate interactively:
+## Installation (Deprecated - Use npm:pi-nvidia-nim instead)
 
 ```bash
-pi
-/login nvidia
+pi install git:github.com/lutfi-zain/pi-nvidia-extension
 ```
 
-You'll be prompted to enter your NVIDIA API key. Get your API key at [https://build.nvidia.com](https://build.nvidia.com).
-
-**API Key Validation:**
-- The extension will validate your API key format (must start with `nvapi-`)
-- It will then test the key by making a live API call to NVIDIA
-- If the key is invalid or has insufficient permissions, you'll receive a clear error message
-- Only valid keys will be saved to your credentials
-
-### Method 2: Environment Variable
+## Configuration
 
 Set the `NVIDIA_API_KEY` environment variable:
 
@@ -88,38 +123,7 @@ Set the `NVIDIA_API_KEY` environment variable:
 export NVIDIA_API_KEY="your-nvidia-api-key"
 ```
 
-### Method 3: Auth File
-
-Add your NVIDIA API key to `~/.pi/agent/auth.json`:
-
-```json
-{
-  "nvidia": {
-    "type": "api_key",
-    "key": "your-nvidia-api-key"
-  }
-}
-```
-
-### Priority Order
-
-Pi checks for credentials in this order:
-1. `/login` credentials (stored in `~/.pi/agent/auth.json`)
-2. `NVIDIA_API_KEY` environment variable
-3. `auth.json` entry
-
-## Development
-
-To test this extension locally:
-
-```bash
-pi -e ./index.ts
-```
-
-## Requirements
-
-- pi-coding-agent
-- NVIDIA API key
+Get your API key at [https://build.nvidia.com](https://build.nvidia.com)
 
 ## License
 
