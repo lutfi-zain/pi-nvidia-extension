@@ -1,12 +1,45 @@
 {
   "name": "pi-nvidia-extension",
   "version": "0.0.1",
-  "description": "NVIDIA NIM provider for pi-coding-agent",
+  "description": "NVIDIA NIM provider for pi-coding-agent with 10 high-performance models and live API key validation",
   "main": "index.ts",
   "author": "Lutfi",
   "license": "MIT",
-  "keywords": ["pi-package", "nvidia", "nim", "llm", "ai", "gpu"],
+  "keywords": [
+    "pi-package",
+    "nvidia",
+    "nim",
+    "llm",
+    "ai",
+    "gpu",
+    "coding-agent",
+    "model-provider",
+    "api-validation",
+    "swe-bench"
+  ],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lutfi-zain/pi-nvidia-extension.git"
+  },
+  "homepage": "https://github.com/lutfi-zain/pi-nvidia-extension#readme",
+  "bugs": {
+    "url": "https://github.com/lutfi-zain/pi-nvidia-extension/issues"
+  },
   "dependencies": {
     "@mariozechner/pi-coding-agent": "latest"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "TESTING.md",
+    "test-manual.js",
+    "test-api-key.ts",
+    "package.json"
+  ]
 }

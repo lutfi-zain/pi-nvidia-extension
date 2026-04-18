@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Testing
+*.test.ts
+*.spec.ts
+test-*.ts
+test-*.js
+
+# Documentation drafts
+*.draft.md
+DRAFT_*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+*.log
+.env
+.env.*
+dist/
+build/
