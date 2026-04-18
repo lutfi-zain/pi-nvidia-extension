@@ -74,6 +74,12 @@ pi
 
 You'll be prompted to enter your NVIDIA API key. Get your API key at [https://build.nvidia.com](https://build.nvidia.com).
 
+**API Key Validation:**
+- The extension will validate your API key format (must start with `nvapi-`)
+- It will then test the key by making a live API call to NVIDIA
+- If the key is invalid or has insufficient permissions, you'll receive a clear error message
+- Only valid keys will be saved to your credentials
+
 ### Method 2: Environment Variable
 
 Set the `NVIDIA_API_KEY` environment variable:
