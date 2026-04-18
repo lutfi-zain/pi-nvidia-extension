@@ -41,7 +41,7 @@ export default function (pi: ExtensionAPI) {
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-        contextWindow: 200000,
+        contextWindow: 204800,
         maxTokens: 8192,
         compat: {
           maxTokensField: "max_tokens"
@@ -53,7 +53,7 @@ export default function (pi: ExtensionAPI) {
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-        contextWindow: 128000,
+        contextWindow: 200000,
         maxTokens: 8192,
         compat: {
           maxTokensField: "max_tokens"
@@ -90,7 +90,7 @@ export default function (pi: ExtensionAPI) {
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-        contextWindow: 256000,
+        contextWindow: 262144,
         maxTokens: 8192,
         compat: {
           maxTokensField: "max_tokens"
@@ -114,7 +114,7 @@ export default function (pi: ExtensionAPI) {
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-        contextWindow: 128000,
+        contextWindow: 262144,
         maxTokens: 8192,
         compat: {
           maxTokensField: "max_tokens"
@@ -138,7 +138,7 @@ export default function (pi: ExtensionAPI) {
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
-        contextWindow: 256000,
+        contextWindow: 32000,
         maxTokens: 8192,
         compat: {
           maxTokensField: "max_tokens"

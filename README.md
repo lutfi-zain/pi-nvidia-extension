@@ -38,17 +38,17 @@ This extension provides access to 10 high-performance NVIDIA NIM models, tested 
 
 | Model | SWE-bench | Context Window | Speed |
 |-------|-----------|---------------|-------|
-| MiniMax M2.5 | 80.2% | 200k | ~11s |
-| Kimi K2.5 | 76.8% | 128k | ~1s |
+| MiniMax M2.5 | 80.2% | 204k | ~11s |
+| Kimi K2.5 | 76.8% | 200k | ~1s |
 | GLM 4.7 | 73.8% | 200k | ~1s |
 | Kimi K2 Thinking | 71.3% | 256k | ~1s |
-| Devstral 2 123B | 72.2% | 256k | ~1s |
+| Devstral 2 123B | 72.2% | 262k | ~1s |
 
 ### S Tier (SWE-bench 60-70%)
 
 | Model | SWE-bench | Context Window | Speed |
 |-------|-----------|---------------|-------|
-| Qwen 3 Next 80B | 65.0% | 128k | ~1s |
+| Qwen 3 Next 80B | 65.0% | 262k | ~1s |
 | GPT OSS 120B | 60.0% | 128k | ~1s |
 | Llama 4 Maverick 17B | 62.0% | 1M | ~1s |
 
@@ -56,7 +56,7 @@ This extension provides access to 10 high-performance NVIDIA NIM models, tested 
 
 | Model | SWE-bench | Context Window | Speed |
 |-------|-----------|---------------|-------|
-| Mistral Large 3 675B | 58.0% | 256k | ~3s |
+| Mistral Large 3 675B | 58.0% | 32k | ~3s |
 | Nemotron Ultra 253B | 56.0% | 128k | ~1s |
 
 **Note:** All models are free to use with your NVIDIA API key. SWE-bench scores indicate coding task performance.
