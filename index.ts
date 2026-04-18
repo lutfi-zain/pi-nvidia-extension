@@ -37,7 +37,7 @@ export default function (pi: ExtensionAPI) {
     models: [
       {
         id: "minimaxai/minimax-m2.5",
-        name: "MiniMax M2.5",
+        name: "MiniMax M2.5 (SWE 80.2%, 204k)",
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -49,7 +49,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "moonshotai/kimi-k2.5",
-        name: "Kimi K2.5",
+        name: "Kimi K2.5 (SWE 76.8%, 200k)",
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -61,7 +61,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "z-ai/glm4.7",
-        name: "GLM 4.7",
+        name: "GLM 4.7 (SWE 73.8%, 200k)",
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -74,7 +74,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "moonshotai/kimi-k2-thinking",
-        name: "Kimi K2 Thinking",
+        name: "Kimi K2 Thinking (SWE 71.3%, 256k)",
         reasoning: true,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -86,7 +86,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "mistralai/devstral-2-123b-instruct-2512",
-        name: "Devstral 2 123B",
+        name: "Devstral 2 123B (SWE 72.2%, 262k)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -98,7 +98,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "meta/llama-4-maverick-17b-128e-instruct",
-        name: "Llama 4 Maverick 17B",
+        name: "Llama 4 Maverick 17B (SWE 62.0%, 1M)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -110,7 +110,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "qwen/qwen3-next-80b-a3b-instruct",
-        name: "Qwen 3 Next 80B",
+        name: "Qwen 3 Next 80B (SWE 65.0%, 262k)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -122,7 +122,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "openai/gpt-oss-120b",
-        name: "GPT OSS 120B",
+        name: "GPT OSS 120B (SWE 60.0%, 128k)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -134,7 +134,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "mistralai/mistral-large-3-675b-instruct-2512",
-        name: "Mistral Large 3 675B",
+        name: "Mistral Large 3 675B (SWE 58.0%, 32k)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
@@ -146,7 +146,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-        name: "Nemotron Ultra 253B",
+        name: "Nemotron Ultra 253B (SWE 56.0%, 128k)",
         reasoning: false,
         input: ["text"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
