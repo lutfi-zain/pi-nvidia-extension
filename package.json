@@ -1,0 +1,12 @@
+{
+  "name": "pi-nvidia-extension",
+  "version": "1.0.0",
+  "description": "NVIDIA NIM provider for pi-coding-agent",
+  "main": "index.ts",
+  "author": "Lutfi",
+  "license": "MIT",
+  "keywords": ["pi-package", "nvidia", "nim", "llm", "ai", "gpu"],
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "latest"
+  }
+}
